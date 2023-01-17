@@ -1,0 +1,18 @@
+def isConstant(char):
+    return char.isupper() and len(char) == 1
+
+def isVariable(char):
+    return char.islower() and len(char) == 1
+    
+def unify(e1, e2):
+
+
+if __main__ == "__main__":
+print("Unification using fisrt order logic")
+print("Enter the first expression")
+e1 = input()
+print("Enter the second expression")
+e2 = input()
+substitutions = unify(e1, e2)
+print("The substituions to be made are: ")
+print([' / '.join(substitution) for substitution in substitutions])
